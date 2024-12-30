@@ -1,14 +1,18 @@
-package com.myspring;
+package com.myspring.service;
 
+import com.myspring.service.HelloService;
+import org.junit.Before;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import static org.junit.Assert.*;
-
 public class HelloServiceTest {
+    ClassPathXmlApplicationContext context = null;
+    @Before
+    public void init(){
+        context = new ClassPathXmlApplicationContext("applicationContext.xml");
+    }
 
     @org.junit.Test
     public void sayHello() {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         HelloService helloService = context.getBean("helloService", HelloService.class);
         helloService.sayHello();
     }

@@ -3,6 +3,18 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="helloService" class="com.myspring.HelloService"/>
+    <bean id="helloService" class="com.myspring.service.HelloService"/>
 
+    <bean id="date" class="java.util.Date">
+        <constructor-arg value="2024/12/30"/>
+    </bean>
+
+    <bean id="helloDao" class="com.myspring.dao.HelloDao"/>
+
+    <bean id="injectionService02" class="com.myspring.service.InjectionService02">
+        <property name="num" value="123"/>
+        <property name="name" value="无忌"/>
+        <property name="date" ref="date"/>
+        <property name="helloDao" ref="helloDao"/>
+    </bean>
 </beans>

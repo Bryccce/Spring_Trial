@@ -1,4 +1,4 @@
-package com.myspring;
+package com.myspring.service;
 
 public class HelloService {
     public void sayHello(){

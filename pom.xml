@@ -11,6 +11,7 @@
   <url>http://maven.apache.org</url>
   <modules>
     <module>spring01</module>
+    <module>spring01_crud</module>
   </modules>
 
   <properties>
@@ -40,6 +41,12 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
       <version>5.2.5.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.32</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 </project>
