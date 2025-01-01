@@ -6,6 +6,7 @@
         <option name="generatedClassPathList">
           <list>
             <option value="$PROJECT_DIR$/spring01_crud/src/main/java/com/myspring/po" />
+            <option value="$PROJECT_DIR$/spring04/src/main/java/com/myspring/po" />
           </list>
         </option>
       </ProjectProfile>
